@@ -93,6 +93,7 @@ in
             ${pkgs.bootspec-secureboot}/bin/installer \
               --toplevel="$1" \
               $([ ! -z ''${NIXOS_INSTALL_BOOTLOADER+x} ] && echo --install) \
+              --verbosity --verbosity --verbosity --verbosity \
               ${installerArgs}
           ''
         );
